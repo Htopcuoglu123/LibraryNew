@@ -29,4 +29,6 @@ public class UsersModulePage extends BasePage{
     @FindBy(xpath = "//div[@id='ajax']")
     public WebElement verificationMsg;
 
+
+
 }
