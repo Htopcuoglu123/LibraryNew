@@ -26,7 +26,9 @@ public class UsersModulePage extends BasePage{
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveChangesBtn;
 
-    @FindBy(xpath = "//div[@id='ajax']")
+    @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement verificationMsg;
+
+
 
 }
