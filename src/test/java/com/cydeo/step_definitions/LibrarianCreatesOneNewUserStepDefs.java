@@ -11,7 +11,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class LibrarianCreatesNewUserStepDefs {
+public class LibrarianCreatesOneNewUserStepDefs {
 UsersModulePage usersModulePage=new UsersModulePage();
 BasePage basePage=new BasePage();
 LoginPage loginPage=new LoginPage();
@@ -21,7 +21,7 @@ LoginPage loginPage=new LoginPage();
     }
     @When("librarian clicks Users module")
     public void librarian_clicks_users_module() throws InterruptedException {
-        //Thread.sleep(3000);
+
         BrowserUtils.waitForClickablility(By.xpath("//span[text()='Users']"),15);
         usersModulePage.usersLink.click();
     }
@@ -33,11 +33,11 @@ LoginPage loginPage=new LoginPage();
     }
     @When("librarian enters full name,password, email address")
     public void librarian_enters_full_name_password_email_address() {
-    usersModulePage.fullNameBox.sendKeys("Melissa Rose");
+    usersModulePage.fullNameBox.sendKeys("Mala Rose");
     BrowserUtils.waitForClickablility(By.name("password"),15);
-    usersModulePage.passwordBox.sendKeys("MR123");
+    usersModulePage.passwordBox.sendKeys("MaRose123");
     BrowserUtils.waitForClickablility(By.name("email"),15);
-    usersModulePage.emailBox.sendKeys("MR123@gmail.com");
+    usersModulePage.emailBox.sendKeys("MaRose123@gmail.com");
 
 
     }
@@ -49,7 +49,7 @@ LoginPage loginPage=new LoginPage();
     @Then("verify a new user is created")
     public void verify_a_new_user_is_created() {
         BrowserUtils.waitFor(10);
-        BrowserUtils.newUserVerify(Driver.getDriver(),"Melissa Rose","Melissa Rose");
+        BrowserUtils.newUserVerify(Driver.getDriver(),"Mala Rose","Mala Rose");
         //System.out.println("usersModulePage.verificationMsg.getText() = " + usersModulePage.verificationMsg.getText());
         //Assert.assertEquals("Msg is not displayed correctly","The user has been created",usersModulePage.verificationMsg.getText());
     }

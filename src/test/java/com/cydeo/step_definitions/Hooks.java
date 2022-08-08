@@ -16,10 +16,10 @@ public class Hooks {
         WebDriver driver = Driver.getDriver();
         LoginPage loginPage=new LoginPage();
         Driver.getDriver().get(ConfigurationReader.getProperty("qa2_url"));
-        String username=ConfigurationReader.getProperty("lib32_user");
-        String password=ConfigurationReader.getProperty("lib32_pass");
+//        String username=ConfigurationReader.getProperty("lib32_user");
+//        String password=ConfigurationReader.getProperty("lib32_pass");
 
-        loginPage.login(username,password);
+      //loginPage.login(username,password);
 
     }
 
