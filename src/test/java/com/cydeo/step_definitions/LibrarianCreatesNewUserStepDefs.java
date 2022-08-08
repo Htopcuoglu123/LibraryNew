@@ -37,7 +37,7 @@ LoginPage loginPage=new LoginPage();
     BrowserUtils.waitForClickablility(By.name("password"),15);
     usersModulePage.passwordBox.sendKeys("MR123");
     BrowserUtils.waitForClickablility(By.name("email"),15);
-    usersModulePage.emailBox.sendKeys("MR123@gmail.com");
+    usersModulePage.emailBox.sendKeys("MR124@gmail.com");
 
 
     }
